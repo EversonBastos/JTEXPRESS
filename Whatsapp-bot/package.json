@@ -1,0 +1,13 @@
+{
+  "name": "chatbot-jt-express-whatsapp-publico",
+  "version": "1.0.0",
+  "description": "Versão pública e sanitizada do chatbot experimental para WhatsApp Web.",
+  "main": "robo-publico.js",
+  "scripts": {
+    "start": "node robo-publico.js"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "1.23.0"
+  }
+}
