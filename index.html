@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot J&T Express</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="tag">Projeto Integrador II • Grupo 31</p>
+        <h1>Chatbot de Atendimento J&T Express</h1>
+        <p>
+          Protótipo web demonstrativo baseado no fluxo do chatbot para WhatsApp.
+          A solução simula respostas para dúvidas frequentes, registra categorias
+          de atendimento e apresenta indicadores em dashboard.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <section class="phone">
+        <header class="phone-header">
+          <div class="avatar">JT</div>
+          <div>
+            <strong>Atendimento Virtual J&T Express</strong>
+            <span>online • protótipo acadêmico</span>
+          </div>
+        </header>
+
+        <div id="chatBox" class="chat-box"></div>
+
+        <form id="chatForm" class="input-area">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Digite sua mensagem ou opção..."
+            autocomplete="off"
+          />
+          <button type="submit">Enviar</button>
+        </form>
+
+        <p class="hint">Digite <strong>MENU</strong> para voltar ao início.</p>
+      </section>
+
+      <section class="dashboard">
+        <h2>Dashboard de Indicadores</h2>
+        <p class="subtitle">Dados gerados a partir das interações simuladas no chatbot.</p>
+
+        <div class="cards">
+          <article class="card">
+            <strong id="totalAtendimentos">0</strong>
+            <span>Total de mensagens</span>
+          </article>
+          <article class="card">
+            <strong id="totalResolvidas">0</strong>
+            <span>Respostas automáticas</span>
+          </article>
+          <article class="card">
+            <strong id="totalEncaminhadas">0</strong>
+            <span>Encaminhamentos</span>
+          </article>
+        </div>
+
+        <h3>Categorias mais acessadas</h3>
+        <div id="categoryList" class="category-list"></div>
+
+        <h3>Últimos registros</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Perfil</th>
+                <th>Categoria</th>
+                <th>Tipo</th>
+              </tr>
+            </thead>
+            <tbody id="historyTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
