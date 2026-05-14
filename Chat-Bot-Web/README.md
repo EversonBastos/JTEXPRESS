@@ -52,8 +52,7 @@ PROJETOJTEXPRESS/
     ├── index.html
     ├── style.css
     ├── script.js
-    ├── README.md
-    └── .gitignore
+    └── README.md
 ├── Dashboard/
     ├── atendimentos.csv
     ├── index.html
