@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Interativo J&T Express</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="tag">Projeto Integrador II • Grupo 31</p>
+        <h1>Dashboard Interativo de Indicadores de Atendimento</h1>
+        <p>
+          Análise das dúvidas frequentes recebidas no atendimento via WhatsApp corporativo,
+          com dados agrupados por categoria e sem identificação de clientes.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <span>Objetivo</span>
+        <strong>Melhorar o atendimento durante a transição dos vendedores internos para atuação externa.</strong>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card primary">
+        <span>Total de dúvidas</span>
+        <strong id="totalDuvidas">0</strong>
+        <small>Período analisado: 1 semana</small>
+      </article>
+
+      <article class="card">
+        <span>Categoria mais frequente</span>
+        <strong id="categoriaPrincipal">-</strong>
+        <small>Maior volume de dúvidas</small>
+      </article>
+
+      <article class="card">
+        <span>Resolvidas pelo chatbot</span>
+        <strong id="resolvidasBot">0%</strong>
+        <small>Média estimada de resolução</small>
+      </article>
+
+      <article class="card">
+        <span>Encaminhamentos</span>
+        <strong id="encaminhadas">0</strong>
+        <small>Demandas para atendimento humano/setor</small>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="panel large">
+        <div class="panel-title">
+          <div>
+            <h2>Dúvidas por categoria</h2>
+            <p>Clique em uma barra para ver a análise da categoria.</p>
+          </div>
+        </div>
+        <div id="barChart" class="bar-chart"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-title">
+          <div>
+            <h2>Distribuição geral</h2>
+            <p>Participação dos principais assuntos.</p>
+          </div>
+        </div>
+
+        <div class="donut-area">
+          <div class="donut">
+            <div class="donut-center">
+              <strong id="donutTotal">0</strong>
+              <span>dúvidas</span>
+            </div>
+          </div>
+
+          <div id="legend" class="legend"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="insight-grid">
+      <article class="panel insight-panel">
+        <div class="panel-title">
+          <div>
+            <h2>Análise da categoria selecionada</h2>
+            <p>Informações exibidas ao clicar em uma categoria do dashboard.</p>
+          </div>
+        </div>
+
+        <div id="detailBox" class="detail-box">
+          <p class="empty">Selecione uma categoria no gráfico para visualizar os detalhes.</p>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-title">
+          <div>
+            <h2>Resumo gerencial</h2>
+            <p>Leitura dos dados para tomada de decisão.</p>
+          </div>
+        </div>
+
+        <div id="managerSummary" class="manager-summary"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-title">
+        <div>
+          <h2>Base de indicadores</h2>
+          <p>Dados tratados por categoria, sem informações pessoais dos clientes.</p>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Total</th>
+              <th>Resolvido pelo bot</th>
+              <th>Encaminhamento</th>
+              <th>Recomendação</th>
+            </tr>
+          </thead>
+          <tbody id="dataTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
