@@ -1,13 +1,17 @@
 {
-  "name": "chatbot-jt-express-whatsapp-publico",
+  "name": "robo-jt-whatsapp-responde-debug",
   "version": "1.0.0",
-  "description": "Versão pública e sanitizada do chatbot experimental para WhatsApp Web.",
-  "main": "robo-publico.js",
+  "description": "Robô WhatsApp J&T Express com QR Code, menu, respostas e analytics para Projeto Integrador II.",
+  "main": "index.js",
   "scripts": {
-    "start": "node robo-publico.js"
+    "start": "node index.js",
+    "dev": "node index.js"
   },
+  "keywords": ["whatsapp", "chatbot", "node", "integrador", "jtexpress"],
+  "author": "Projeto Integrador II",
+  "license": "MIT",
   "dependencies": {
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "1.23.0"
+    "whatsapp-web.js": "^1.25.0"
   }
 }
