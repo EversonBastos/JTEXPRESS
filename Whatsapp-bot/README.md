@@ -4,12 +4,10 @@ Esta pasta contém a versão pública do código experimental do chatbot para Wh
 
 ## Importante
 
-Contatos reais, links operacionais, canais internos e informações sensíveis foram removidos ou substituídos por marcadores como:
+Contatos reais, links operacionais, canais internos e informações sensíveis foram removidos ou substituídos por :
 
-- `[E-MAIL REMOVIDO]`
-- `[TELEFONE REMOVIDO]`
-- `[LINK REMOVIDO]`
-- `[NOME REMOVIDO]`
+Fulana@jtexpress.com.br
+(99) 99999-9999
 
 ## Objetivo do arquivo
 
