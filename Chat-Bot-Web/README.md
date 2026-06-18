@@ -15,10 +15,9 @@ Para fins acadêmicos, foi desenvolvido um protótipo web funcional em HTML, CSS
 Para executar:
 
 1. Abra o arquivo `index.html` em qualquer navegador.
-2. Digite `Oi`.
-3. Escolha `1` para cliente novo ou `2` para cliente J&T.
-4. Navegue pelas opções do atendimento.
-5. Observe o dashboard atualizando os indicadores.
+2. Escolha `1` para cliente novo ou `2` para cliente J&T.
+3. Navegue pelas opções do atendimento.
+4. Observe o dashboard atualizando os indicadores.
 
 ## Dashboard
 
