@@ -2,7 +2,7 @@
 
 Este arquivo contém a base de dados utilizada no dashboard do projeto.
 
-Os dados foram levantados durante um período de teste de uma semana, com base nas dúvidas frequentes recebidas no atendimento via WhatsApp corporativo da J&T Express, utilizado pela responsável Cristiele Silva no contato com os clientes sob sua responsabilidade.
+Os dados utilizados no Dashboard são simulados.
 
 Para proteção das informações e atendimento à LGPD, os dados foram agrupados por categoria e quantidade, sem identificação de clientes, telefones, endereços, CPF/CNPJ, códigos de rastreio ou prints de conversas.
 
